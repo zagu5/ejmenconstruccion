@@ -29,7 +29,7 @@
 
 .overlay {
     position: absolute;
-    top: 120%;
+    top: 180%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -42,14 +42,14 @@
 
 .overlay-text {
     color: #e98f2d;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'poppins-ExtraBold';
     font-weight: 400;
 }
 
 .overlay-paragraph {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'poppins-ExtraBold';
     text-align: center;
 }
@@ -60,6 +60,36 @@
     }
 }
 
+/* Smartphones (portrait) */
+@media (max-width: 480px) {
+    .overlay {
+        top: 80%; 
+    }
+}
+
+/* iPads (portrait and landscape) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .overlay {
+        top: 75%;
+    }
+}
+
+/* Macs and larger screens */
+@media (min-width: 1025px) {
+    .overlay {
+        top: 70%;
+    }
+}
+
+/* iPhone X and XS */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .overlay {
+        top: 85%; 
+    }
+}
 
 
 
